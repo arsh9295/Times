@@ -1,0 +1,6 @@
+nohup ./JobPosting24X7Step2_2to4.sh 60  &
+nohup ./JobPosting24X7Step2_3to6.sh 60  &
+nohup ./EmpBuyOnlineBatch.sh NafDataPush  &
+nohup com.tbsl.batch.EmpBatchRunner NafDataPush /jobalert/logs/NafDataPush.log &
+nohup ./JobPosting24X7_3to6.sh 5  &
+nohup ./JobPosting24X7_2to4.sh 5  &

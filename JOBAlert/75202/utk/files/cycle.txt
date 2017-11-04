@@ -1,0 +1,15 @@
+null 
+nohup /opt/JOBAlert_New/TotalJobForCandidate.sh TotalJobReport  &
+nohup ./WalkInJob.sh 10  &
+nohup ./emailreg.sh   &
+nohup ./JobPosting24X7.sh 5  &
+nohup ./EAJobPostingStep2.sh 15  &
+nohup -c cd /usr/local/til-monitor;sh sys-pol.sh&
+nohup ./EmpBuyOnlineBatch.sh walkinreminder3hours  &
+nohup /opt/JOBAlert_New/EmpBuyOnlineBatch.sh avgapplyforfa  &
+nohup -c find /jobalert/logs/*.out* -mtime&
+nohup ./TotalJobForCandidate.sh TotalJob  &
+nohup -c cd /usr/local/til-monitor;sh newtil-UEx-policy.sh&
+nohup ./EmpBuyOnlineBatch.sh walkinreminder2days  &
+nohup ./EmpBuyOnlineBatch.sh walkinreminder1day  &
+nohup ./NewJobAlertBatch.sh designation 04-11-2017 &

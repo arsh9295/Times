@@ -1,0 +1,5 @@
+nohup ./JobPosting24X7.sh 5  &
+nohup ./NewJobAlertBatch.sh Cycle1 04-11-2017 &
+nohup ./NewJobAlertBatch.sh Cycle2 04-11-2017 &
+nohup ./NewJobAlertBatch.sh Cycle1a 04-11-2017 &
+nohup ./NewJobAlertBatch.sh Cycle1b 04-11-2017 &

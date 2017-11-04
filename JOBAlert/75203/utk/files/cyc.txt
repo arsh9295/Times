@@ -1,0 +1,5 @@
+nohup ./JobPosting24X7Step2.sh 120  &
+nohup ./NewJobAlertBatch.sh Cycle2a 04-11-2017 &
+nohup /opt/JOBAlert_New/EmpBuyOnlineBatch.sh savedSearch  &
+nohup ./NewJobAlertBatch.sh Cycle3 01-11-2017 &
+nohup -c cd /usr/local/til-monitor;sh sys-pol.sh&

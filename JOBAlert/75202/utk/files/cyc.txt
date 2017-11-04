@@ -1,0 +1,8 @@
+nohup /opt/JOBAlert_New/TotalJobForCandidate.sh TotalJobReport  &
+nohup -c cd /usr/local/til-monitor;sh sys-pol.sh&
+nohup ./EmpBuyOnlineBatch.sh walkinreminder3hours  &
+nohup ./NewJobAlertBatch.sh designation 04-11-2017 &
+nohup ./WalkInJob.sh 10  &
+nohup ./emailreg.sh   &
+nohup ./JobPosting24X7.sh 5  &
+nohup ./EAJobPostingStep2.sh 15  &

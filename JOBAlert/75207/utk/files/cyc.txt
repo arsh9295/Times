@@ -1,0 +1,3 @@
+nohup ./FreshRegistraionJobAlertBatch.sh 15  &
+nohup ./NewPacemaker.sh 15  &
+nohup ./NewJobAlertBatch.sh Cycle1Stage1 13-10-2017 &

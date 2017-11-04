@@ -1,0 +1,36 @@
+null 
+nohup ./FreshRegistraionJobAlertBatch.sh 15  &
+nohup ./NewPacemaker.sh 15  &
+nohup /opt/JOBAlert_New/EmpBuyOnlineBatch.sh JunkResumeMailer  &
+nohup ./EmpBuyOnlineBatch.sh NoStageMailer  &
+nohup ./EmpBuyOnlineBatch.sh UnsuccessOnLine  &
+nohup ./EmpBuyOnlineBatch.sh ActivationMailer  &
+nohup ./RssFeedCompanyBatch.sh   &
+nohup /opt/JOBAlert_New/2amjbscript.sh   &
+nohup ./EmpBuyOnlineBatch.sh Stage7Registration  &
+nohup /opt/JOBAlert_New/6amjobalert.sh   &
+nohup ./EmpBuyOnlineBatch.sh NoJobAlertMailer  &
+nohup ./NewJobAlertBatch.sh widget 15-10-2017 &
+nohup /opt/JOBAlert_New/GuestWeekly.sh   &
+nohup /opt/JOBAlert_New/WIDEGAT.sh   &
+nohup -c cd /usr/local/til-monitor;sh sys-pol.sh&
+nohup -x -oForwardAgent=no -oPermitLocalCommand=no -oClearAllForwardings=yes&
+nohup -c find /jobalert/logs/*.out* -mtime&
+nohup -c cd /usr/local/til-monitor;sh newtil-UEx-policy.sh&
+nohup /opt/JOBAlert_New/saints.sh   &
+nohup ./NewJobAlertBatch.sh Guest 30-10-2017 &
+nohup ./CorporateDashboardBatch.sh   &
+nohup com.tbsl.batch.EmpBatchRunner CorpDashboard /jobalert/logs/CorpDashboard.log &
+nohup ./GetDetails.sh   &
+nohup ./AutoRefreshJobBatch.sh   &
+nohup com.tbsl.batch.EmpBatchRunner AutoRefreshJob /jobalert/logs/AutoRefreshJob.log &
+nohup ./NewJobAlertBatch.sh CVStage1 03-11-2017 &
+nohup ./NewJobAlertBatch.sh PlatinumCandDaily 03-11-2017 &
+nohup ./NewJobAlertBatch.sh PlatinumCandWeekly 03-11-2017 &
+nohup /usr/local/script/tbs   &
+nohup ./NewJobAlertBatch.sh Reminder365 01-11-2017 &
+nohup ./NewJobAlertBatch.sh Reminder 03-11-2017 &
+nohup ./NewJobAlertBatch.sh Cycle1Stage1 03-11-2017 &
+nohup /etc/cron.daily/man-db.cron   &
+nohup ./NewJobAlertBatch.sh similarjobs 04-11-2017 &
+nohup ./NewJobAlertBatch.sh CYCLE15 04-11-2017 &

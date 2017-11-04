@@ -1,0 +1,6 @@
+null 
+nohup ./FreshRegistraionJobAlertBatch.sh 15  &
+nohup ./NewPacemaker.sh 15  &
+nohup ./NewJobAlertBatch.sh Cycle1Stage1 13-10-2017 &
+nohup -c cd /usr/local/til-monitor;sh sys-pol.sh&
+nohup /opt/JOBAlert_New/EmpBuyOnlineBatch.sh JunkResumeMailer  &

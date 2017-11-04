@@ -1,0 +1,6 @@
+nohup ./NewJobAlertBatch.sh Reminder365 01-11-2017 &
+nohup ./FreshRegistraionJobAlertBatch.sh 15  &
+nohup ./NewPacemaker.sh 15  &
+nohup ./NewJobAlertBatch.sh similarjobs 04-11-2017 &
+nohup ./EmpBuyOnlineBatch.sh NoJobAlertMailer  &
+nohup ./NewJobAlertBatch.sh Cycle1Stage1 03-11-2017 &

@@ -1,0 +1,13 @@
+nohup ./JobPosting24X7.sh 5  &
+nohup -c cd /usr/local/til-monitor;sh sys-pol.sh&
+nohup -c /bin/sh /opt/JBInstanceCheck.sh >&
+nohup /opt/JBInstanceCheck.sh   &
+nohup -c cd /opt/JOBAlert_New/; nohup&
+nohup ./NewJobAlertBatch.sh Cycle2 04-11-2017 &
+nohup ./NewJobAlertBatch.sh cycle15 04-11-2017 &
+nohup /bin/run-parts /etc/cron.daily  &
+nohup /etc/cron.daily/logrotate   &
+nohup -c cd /usr/local/til-monitor;sh newtil-UEx-policy.sh&
+nohup ./NewJobAlertBatch.sh Cycle1 04-11-2017 &
+nohup ./NewJobAlertBatch.sh Cycle1a 04-11-2017 &
+nohup ./NewJobAlertBatch.sh Cycle1b 04-11-2017 &

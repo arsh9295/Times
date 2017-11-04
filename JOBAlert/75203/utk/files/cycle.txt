@@ -1,0 +1,18 @@
+null 
+nohup /opt/JOBAlert_New/EmpBuyOnlineBatch.sh hireInstaSms  &
+nohup /opt/JOBAlert_New/EmpBuyOnlineBatch.sh rewProgram  &
+nohup /opt/JOBAlert_New/EmpBuyOnlineBatch.sh freshness  &
+nohup /opt/JOBAlert_New/EmpBuyOnlineBatch.sh markedspam  &
+nohup com.tbsl.batch.EmpBatchRunner freshness /jobalert/logs/freshness.log &
+nohup -c cd /usr/local/til-monitor;sh newtil-UEx-policy.sh&
+nohup /opt/JOBAlert_New/6amJBscript.sh   &
+nohup ./EmpBuyOnlineBatch.sh JobMatchingProfileMailer  &
+nohup /opt/JOBAlert_New/EmpBuyOnlineBatch.sh unsubtjapp  &
+nohup -c /opt/JOBAlert_New/script83at2.sh  &
+nohup ./NewJobAlertBatch.sh Cycle3 01-11-2017 &
+nohup ./NewJobAlertBatch.sh smscycle3 03-11-2017 &
+nohup -c cd /usr/local/til-monitor;sh sys-pol.sh&
+nohup /etc/cron.daily/logrotate   &
+nohup ./JobPosting24X7Step2.sh 120  &
+nohup ./NewJobAlertBatch.sh Cycle2a 04-11-2017 &
+nohup /opt/JOBAlert_New/EmpBuyOnlineBatch.sh savedSearch  &

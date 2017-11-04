@@ -1,0 +1,5 @@
+root     10083  1.5  2.9 15098504 974840 ?     Sl   03:15   6:11 /var/jdk1.8.0_92/bin/java com.tbsl.batch.NewRegistrationRunner JP_24X7_2to4_stp2 60 /jobalert/logs/JobPosting24X7Step2_2to4.log
+root     41943  0.5  2.0 14306916 685648 ?     Sl   Nov01  25:26 /var/jdk1.8.0_92/bin/java com.tbsl.batch.NewRegistrationRunner JP_24X7_3to6_stp2 60 /jobalert/logs/JobPosting24X7Step2_3to6.log
+root     43634  0.0  1.0 11836008 356108 ?     Sl   Sep20  41:54 /var/jdk1.8.0_92/bin/java com.tbsl.batch.EmpBatchRunner NafDataPush /jobalert/logs/NafDataPush.log
+root     43682  0.4  1.7 12043740 561608 ?     Sl   Sep20 304:31 /var/jdk1.8.0_92/bin/java com.tbsl.batch.NewRegistrationRunner JP_24X7_3to6 5 /jobalert/logs/JobPosting24X7_3to6.log
+root     43747  3.2  2.9 12443124 956444 ?     Sl   Sep20 2122:10 /var/jdk1.8.0_92/bin/java com.tbsl.batch.NewRegistrationRunner JP_24X7_2to4 5 /jobalert/logs/JobPosting24X7_2to4.log
